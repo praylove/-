@@ -1,0 +1,199 @@
+/*页面布局*/
+.index
+{
+	width: 300px;
+	padding: 0;
+	margin: 200px auto 0 auto;
+	position: relative;
+}
+
+
+/*标题*/
+.logo
+{
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: #0f88eb;
+	font-size: 70px;
+	text-align: center;
+	letter-spacing: 10px;
+}
+
+
+/*子标题*/
+.subtitle
+{
+	font-size: 18px;
+	text-align: center;
+	color: #696969;
+}
+
+
+/*登录选项*/
+.tab
+{
+	margin: 10px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.tab a
+{
+	height: 40px;
+	color: #A9A9A9;
+	line-height: 30px;
+	margin: 10px;
+	padding: 3px;
+	text-decoration: none;
+}
+
+.tab .active
+{
+	height: 40px;
+	border-bottom: 2px solid #1E90FF;
+	color: #0f88eb;
+	margin: 10px;
+	padding: 3px;
+}
+
+
+/*输入*/
+.input-grounp
+{
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	border-style: groove;
+	border: 1px solid #d5d5d5;
+	border-radius: 3px;
+}
+
+.input
+{
+	width: 280px;
+	height: 47px;
+	padding: 0 10px;
+	margin: 0;
+	border-style: none;
+	border-bottom: 1px solid #d4d4d4;
+}
+
+.last
+{
+	border-bottom: none;
+}
+
+::-webkit-input-placeholder {color: #b3b4b4; }
+::-moz-placeholder	{color: #b3b4b4; }
+::-ms-input-placeholder {color: #b3b4b4; }
+
+.submit
+{
+	width: 300px;
+	height: 41px;
+	background-color: #0f88eb;
+	color: white;
+	font-size: 15px;
+}
+
+
+/*注意说明*/
+.instruction
+{
+	font-size: 10px;
+	color: #b3b4b4;
+	text-align: center;
+	padding: 5px 0;
+}
+.instruction a
+{
+	position: relative;
+	color: #698ebf;
+	text-decoration: none;
+}
+
+.others
+{
+	width: 300px;
+	position: relative;
+	top: 10px;
+}
+
+.others a
+{
+	color: #5ca5e8;
+	font-size: 15px;
+}
+.organization
+{
+	height: 40px;
+	width: 300px;
+	text-align: center;
+}
+.organization a
+{
+	color: #0f88eb;
+	text-decoration: none;
+}
+.download
+{
+	width: 300px;
+	height: 41px;
+	border: 1px solid #5fa6e5;
+	display: block;
+	background-color: white;
+	position: relative;
+}
+.text
+{
+	color: #5fa6e5;
+	font-size: 15px;
+	text-align: center;
+}
+.space
+{
+	width: 0;
+	height: 0;
+}
+.pic
+{
+	width: 252px;
+	height: 250px;
+	border: 1px solid white;
+	border-radius: 7px;
+	background-color: white;
+	background-image: url(qr-code.d6565408.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 25px;
+	margin-left: -2px;
+	position: absolute;
+	bottom: 60px;
+	left: 0;
+	box-shadow: 0 0 8px 0 rgba(0,0,0,.15);
+	display: none;
+}
+.pic::after, .pic::before
+{
+	border:solid transparent;
+	content: "";
+	position: absolute;
+	top: 100%;
+	width: 0;
+	height: 0;
+}
+.pic:after
+{
+	border-width: 14px;
+	border-top-color: white;
+	left: 50%;
+	margin-left: -14px;
+}
+.pic:before
+{
+	border-width: 16px;
+	border-top-color: rgba(0,0,0,.10);
+	left: 50%;
+	margin-left: -16px;
+}

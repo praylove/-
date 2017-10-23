@@ -1,0 +1,76 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>知乎-发现更大的世界</title>
+	<link rel="stylesheet" type="text/css" href="css/indexstyle.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+</head>
+
+<body>
+<div class="index">
+	
+	<div>
+		<p class="logo">知乎</p>
+		<p class="subtitle">与世界分享你的知识、经验和见解</p>
+	</div>
+	
+	<div>
+	
+		<div id="sign-in" style="display:block;">
+			
+			<div class="tab">
+				<a href="#sign-up" class="active" onclick="active1()">注册</a>
+				<a href="#sign-in" onclick="active2()">登录</a>
+			</div>
+			
+			<form method="post" action="register.jsp">
+				<div class="input-grounp">
+					<input type="text" name="name" placeholder="姓名" class="input" /> <br />
+					<input type="text" name="phonenumber" placeholder="手机号" class="input" /> <br />
+					<input type="password" name="password" placeholder="密码" class="input last" /> <br />
+				</div>
+				<br />
+				<input type="submit" name="sign" value="注册知乎" class="submit"><br />
+			</form>
+				
+			<p class="instruction">点击「注册」按钮，即代表你同意<a href="https://www.zhihu.com/terms" target="_blank">《知乎协议》</a></p>
+			<div class="organization">
+				<a href="https://www.zhihu.com/org/signup" target="_top">注册机构号</a>
+			</div>
+		</div>
+		
+		<div id="sign-up" style="display:none;">
+			
+			<div class="tab">
+				<a href="#sign-up" onclick="active1()">注册</a>
+				<a href="#sign-in" class="active" onclick="active2()">登录</a>
+			</div>
+			
+			<form method="post" action="login.jsp">
+				<div class="input-grounp">
+					<input type="text" name="accant" placeholder="手机号或邮箱" class="input" /> <br />
+					<input type="password" name="password" placeholder="密码" class="input last" /> <br />
+				</div>
+				<br />
+				<input type="submit" name="sign" value="登录" class="submit"><br />
+				<div>
+					<a href="#phone">手机验证码登录</a>
+					<a href="#error">无法登陆？</a>
+				</div>
+			</form>
+			
+		</div>
+		
+		
+	</div>
+	<div id="download">
+		<span class="pic"></span>
+		<button class="download" onclick="download1()">
+			<span class="text">下载知乎 App</span>
+		</button>
+	</div>
+</div>
+</body>
+</html>
